@@ -19,6 +19,10 @@ int note(char statut)
             break;
         case 'C':
             return 0;
+        case 'D':
+            projet = 20;
+            examen = 20;
+            teteDeEleve = 0;
         default:
             projet = rand()%20;
             examen = rand()%20;
@@ -32,7 +36,7 @@ int note(char statut)
 int main(int argc, char **argv)
 {
     if (argc == 1)
-        printf("Cool...");
+        printf("Pas Cool en fait...");
     else
         printf("Note finale : %d\n", note(argv[1]);
 
